@@ -19,17 +19,18 @@ createApp({
         },
       ],
 
-      newTodo: {
-        text: "",
-        done: false,
-      },
+      newTodo: "",
     };
   },
 
   methods: {
     addNewItem(content) {
-      this.newTodo.text = content;
-      this.todos.push(this.newTodo);
+      this.todos.push({ text: content, done: false });
+      this.clearInput();
+    },
+
+    clearInput() {
+      this.newTodo = "";
     },
   },
 }).mount("#app");
