@@ -6,3 +6,12 @@ ul {
 li {
   border: 2px solid red;
 }
+
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+i:hover {
+  color: red;
+}

@@ -18,6 +18,7 @@ createApp({
           done: false,
         },
       ],
+
       newTodo: {
         text: "",
         done: false,
