@@ -18,6 +18,17 @@ createApp({
           done: false,
         },
       ],
+      newTodo: {
+        text: "",
+        done: false,
+      },
     };
+  },
+
+  methods: {
+    addNewItem(content) {
+      this.newTodo.text = content;
+      this.todos.push(this.newTodo);
+    },
   },
 }).mount("#app");
