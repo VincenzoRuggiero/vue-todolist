@@ -26,7 +26,7 @@
                     <ul>
                         <li v-for="element in todos" class="d-flex justify-content-between p-3">
                             <span :class="(element.done) ? 'strike' : '' ">{{ element.text }}</span>
-                            <i class="fa-solid fa-circle-xmark"></i>
+                            <i @click="removeTodo(element)" class="fa-solid fa-circle-xmark"></i>
                         </li>
                     </ul>
                 </div>

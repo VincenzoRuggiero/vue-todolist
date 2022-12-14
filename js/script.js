@@ -32,5 +32,13 @@ createApp({
     clearInput() {
       this.newTodo = "";
     },
+
+    removeTodo(itemToDelete) {
+      let item = this.todos.indexOf(itemToDelete);
+
+      if (item > -1) {
+        this.todos.splice(item, 1);
+      }
+    },
   },
 }).mount("#app");
